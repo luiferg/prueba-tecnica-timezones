@@ -3,7 +3,7 @@ import { DateTime } from 'luxon'
 import CardsGridControl from './cards-grid-control'
 import Card from './ui/card'
 import Separator from './ui/separator'
-import { useTimezone } from '@/providers'
+import { useState } from 'react'
 
 const timezonesData = [
   { timezone: 'Australia/Sydney', date: '2023-11-22', time: '17:55' },
@@ -29,8 +29,9 @@ const timezonesData = [
 ]
 
 const CardsGridTest1 = () => {
-  const { selectedTimezone, setSelectedTimezone } = useTimezone()
-
+  // State to manage the selected timezone
+  const [selectedTimezone, setSelectedTimezone] = useState<string | null>(null)
+  // Get unique timezones from the data
   const uniqueTimezones = [
     ...new Set(timezonesData.map((item) => item.timezone)),
   ]

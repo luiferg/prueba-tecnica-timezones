@@ -10,11 +10,16 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^5.18.1",
+    "@tanstack/react-query-devtools": "^5.18.1",
+    "axios": "^1.6.7",
     "formik": "^2.4.5",
+    "lucide-react": "^0.323.0",
     "luxon": "^3.4.4",
     "next": "14.1.0",
+    "next-client-cookies": "^1.1.0",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-useanimations": "^2.10.0"
   },
   "devDependencies": {
     "@types/luxon": "^3.4.2",

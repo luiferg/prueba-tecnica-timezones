@@ -1,5 +1,3 @@
-import CardsGrid from '@/components/cards-grid-test-1'
-
 export default async function Home() {
   return (
     <main className='flex min-h-screen max-w-screen-xl flex-col gap-2 items-center p-4 mx-auto'>

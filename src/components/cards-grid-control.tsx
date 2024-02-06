@@ -1,20 +1,18 @@
-interface CardsGridControlProps {
-  selectedTimezone: string | null
-  setSelectedTimezone: React.Dispatch<React.SetStateAction<string | null>>
-  uniqueTimezones: string[]
-}
+import { CardsGridControlProps } from '@/types'
 
 const CardsGridControl: React.FC<CardsGridControlProps> = ({
   selectedTimezone,
   setSelectedTimezone,
   uniqueTimezones,
 }) => {
+  // Handle the timezone change
   const handleTimezoneChange = (
     event: React.ChangeEvent<HTMLSelectElement>
   ) => {
     setSelectedTimezone(event.target.value)
   }
 
+  // Reset the timezone selection
   const resetTimezone = () => {
     setSelectedTimezone(null)
   }

@@ -34,7 +34,7 @@ For cookie management I decided to use [next-client-cookies](https://www.npmjs.c
 The react-query documentation that i'm using is [TanStack Query Docs - Advance SSR](https://tanstack.com/query/latest/docs/react/guides/advanced-ssr).
 Have in account that this Next app is using App Router, NOT Pages Router.
 
-To clone the project use `git clone https://github.com/luiferg/prueba-tecnica-randomusers.git`
+To clone the project use `git clone https://github.com/luiferg/prueba-tecnica-timezones.git`
 
 Run `npm install` to install the dependencies
 
